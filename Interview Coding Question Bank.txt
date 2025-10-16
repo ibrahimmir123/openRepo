@@ -1,0 +1,64 @@
+Interview Coding Question Bank
+
+1)Find the string end with Y
+		List<String> monthsList	=List.of("janvary","febrary","march");
+		List<String> endwithYmonthList=monthsList.stream().filter(month->month.endsWith("y")).collect(Collectors.toList());
+				System.out.println(endwithYmonthList);
+				
+2)Program to find non repeated character
+		String text ="Nisharth";
+
+3)int[] arr = new int[] {1,-2,3,2,10,5,8,-9};
+ 
+4)List<List<?>> lists = Arrays.asList(
+                Arrays.asList(1, 1),
+                Arrays.asList("A","B"),
+                Arrays.asList(1.1f,1.2f)
+        );
+5)List of fruits  = ("apple bannana apple", "banana orange banana apple", "orange apple banana"
+apple = 4 banana = 4 orange = 2, only top 3 based on frequency in descending order.
+
+6)Write a program to find Anagram? 
+
+7)List<String> Str = Arrays.asList("Apple", "Bat", "Orange", "Avacado", "Banana", "Aeroplane");
+		- Find the string which starts with 'A'.
+		- Find the longest string word.
+ 
+8)String s="swiss";
+	- Find the first count of each char.
+	- Find the first non repeated character 
+	
+9)User input: abc-123+xyz_897^a12
+	Output: [abc,xyz]
+			[123,897]
+			[a12]
+10)User input:
+{
+ "inputs": [
+   {
+     "input": ["abc", "lmn", "ijk"]
+   },
+   {
+     "input": ["hg", "ieo"]
+   },
+   {
+     "input": ["df"]
+   }
+ ]
+}
+ 
+{"output":["lmn","hg","df"]}
+
+11)First Non-repeated character from the String
+ 
+		/*
+		 * Input : { "array", "apple", "rat"} Output: y,a,r
+		 */
+12)
+HashMap<String,String> hashMap = new HashMap<>();
+hashmap.put("rohit","mumbai");
+hashmap.put("prasad","mumbai");
+hashmap.put("vasil","gujrat");
+hashmap.put("vasil","navi mumbai");
+
+write a code to get list of people staying in mumbai in java8?

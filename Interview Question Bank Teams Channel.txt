@@ -1,0 +1,313 @@
+ Barclays Question 
+
+1) find the string end with Y
+List<String> monthsList	=List.of("janvary","febrary","march");
+		List<String> endwithYmonthList=monthsList.stream().filter(month->month.endsWith("y")).collect(Collectors.toList());
+				System.out.println(endwithYmonthList);
+2)Explain java 8 feature
+3)Explain function interface. real time example
+	Ex. Predicate<String> predicate = (String s)->s.length()>5;
+	    System.out.println(predicate.test("hello"));
+4)when we used hash set &  tree set
+5)difference between array list & hash set
+6)difference between authentication & authorization
+7)Explain flow of spring security  
+8)Explain jvm  memory management
+9) difference between @Bean & @Componant annotation
+10) which annotation used in previous project
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Sony Client Round
+
+Stack Memory vs Heap Memory
+equals to Hashcode in Map
+Exception handling
+Internal working of Map and time complexeity
+How collisions are resolved in Hashing
+Any project that you were proud that you worked on
+Multithreading
+ 
+How does a spring boot application work. 
+Spring boot exceptions(Noelement found, Bean exceptions, XML parser exceptions)
+How would you keep a cache between API gateway or the application. 
+Explain SAGA design pattern
+WHat patterns did I work with
+What is serialization and deserialization
+Did you work with @Conditional annotations.
+How would you optimize the API performance
+Sharding
+Schema Design
+What is database pooling
+Loadbalancing
+How would you optimize the API performance.
+Spring Security
+Primary vs Qualifier annotations
+Can you interchange Beans and Component.
+Spring cloud @Conditional used for
+WHat is containerization and orchestration. 
+Messaging quees
+@Mock, @InjectMocks, @Spy
+Cassandra
+Design Patterns
+Singleton
+Strategy
+AbstractFactory
+Observer
+Publisher Subscriber Model
+ALl of them with use cases
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Morgan Stanley 
+
+1.Q:What is immutability, Available Immutable Class, How to write custom Immutable Class
+2.Q: What is singlton, How to achive it, How to create Custom singlton class
+3.Q: Create a custom functional interface that should take three Integer arguments And return an integer value. 
+	Use it as lambada expression in java
+4.Q: Employee Object having:
+Name, Age, Salary and Designation
+Output:
+Find list of Designation from given employee list,
+Employee age should be b/w 30 to 40 years,
+Employee Salary should be greater than 40,000,
+Designation list should be in reverse alphabetic order like –
+[ VP,   Manager, Director]
+Using Stream API.
+5.Q: There are three tables
+Employee - ( EmpId, Name)
+State - (StateId, EmpId, Name)
+City -  (CityId, StateId, Name)
+You need to write a join query to get all employee records whether they have records in state or not, whether they have records in city or not.
+ 
+6. What is JWT, How to implement is , what will be the flow if have to implement
+7. What is Spring security, how to implement, how to achieve JWT into it
+8.Q: How to secure rest services
+9.Q : explain @SpringBootApplication annotation
+
+----------------------------------------------------------------------------------------------------------------------------------
+Fiserv Client Interview
+
+Spring-spring boot difference
+hibernate features
+soap and Rest API difference
+sequence in Oracle
+Optimize query
+JVM architecture, Class loader
+Exceptional propagation, throw, throws and try catch
+http protocol, http cookies
+different joins in SQL
+do we use SP/functions in queries
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Airfrance client round
+
+String s="welcome capgemini";  ---- o/p shoud come W & C (Welcome Capgemini)
+String s="welcome capgemini";  ---- o/p come,
+List<Integer> list = Arrays.asList(1,2,3,1,5,4,2); o/p [1, 2].
+ 
+only these sceneria they asked
+ 
+ 
+String s = "welcome capgemini";
+        //o/p Welcome Capgemini
+ 
+        String result=  Arrays.stream(s.split(" "))
+                .map(word->word.substring(0,1).toUpperCase()+
+                        word.substring(1).toLowerCase())
+                .collect(Collectors.joining(" "));
+        System.out.println(result);
+ 
+       //o/p come 
+        String result1= Arrays.stream(s.split(" "))
+                .filter(word->word.contains("come"))
+                .map(word->word.substring(word.indexOf("come"),
+                        word.indexOf("come")+4))
+                .findFirst().orElse("Not Found");
+        System.out.println(result1);
+ 
+//o/p [1, 2].
+        List<Integer> list = Arrays.asList(1,2,3,1,5,4,2);
+ 
+        List<Integer> result2 = list.stream()
+                .collect(Collectors.groupingBy(Function.identity(),
+                        Collectors.counting()))
+                .entrySet().stream()
+                .filter(entry->entry.getValue()>1)
+                .map(Map.Entry::getKey)
+                .collect(Collectors.toList());
+        System.out.println(result2);
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+1. Given a sample string operation, what will be the output(a+ "X" etc)?  
+2. Exception in JAVA?
+3. what is Redux, Hooks, Components and Features?
+4. Use cases of Collection?
+5. Write method to calculate the maximum chocolates that can be bought with wrappers and 25p logic?
+6. Write a method to count how many times each character appears in string?
+7. How pagination works in dashboard?
+8. Difference between Map and HashMap there are some follow up question? 
+9. Difference Between RestController and Controller?
+there are multiple follow-up questions.
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Current project details
+What is the difference between execution in executor framework?
+What is blocking queue?
+How do we know thread pool is exhausted or has empty thread?
+Different design patterns?
+What if we initialize Date class object in singleton class, will the date object be singleton too?
+What design pattern is used with async data update between different clients?
+Different design patterns.
+What is the return type of different List interface methods
+What is the role of zookeepers?
+How to handle failure retry in Kafka
+Spring boot annotations
+Write controller class
+stream api v/s parallel streams api
+Pagination Vs JPA Repository
+Different – different design patterns
+database related questions, Cursor, Normalization, query
+Spring security – Login process / how to implement the login and which springboot application you use
+Annotations
+Database connections
+which version of java you worked on
+Any exposure on using Lambda function
+multithreading
+Which framework of java is used for multithreading
+Which executor services have you used
+What is the type of Executor service and for what you have used executor service
+What are thread pools? Have u used cache thread pool
+New Fixed thread pool and new Fixed Executor
+What are different types of queue in java, synchronous queue
+Which version of spring boot you worked on
+How do you claim that you have worked on microservice?
+wallet service in java spring boot
+What is the use of map and flat map in stream
+What is a weak hash map
+How will you convert string in to array and make it use
+If 25 connections are required, then how will you set it up in microservices
+What is dialect
+Return type of Void method
+Java 8 or Java 17
+Difference in java 8 and java 21
+Explain pagination concept and types of pagination with working example
+Explain Kubernetes config
+project related question
+Design pattern in microservices
+You have call system A. how to call system B using service line
+What is the purpose of Lombok
+What is the purpose of records in Java? Have you used Java records earlier?
+Rest end point
+ 
+ 
+ 
+Programming questions
+ 
+User input: abc-123+xyz_897^a12
+Output: [abc,xyz]
+[123,897]
+[a12]
+User input: abc-123+xyz_897^a12  fgh
+Output: [abc,xyz]
+[123,897]
+[a12]
+ 
+{
+ "inputs": [
+   {
+     "input": ["abc", "lmn", "ijk"]
+   },
+   {
+     "input": ["hg", "ieo"]
+   },
+   {
+     "input": ["df"]
+   }
+ ]
+}
+ 
+{"output":["lmn","hg","df"]}
+ 
+Write controller and create Get API  to fetch employee record and Post API to  create employee record
+Create database connection.
+Explain H2 database with example
+Write third party api mappings 
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Spring Boot Question
+
+1. Easy Level Spring Boot Interview Questions
+#	Question
+1	What is Spring Boot?
+2	What are the advantages of using Spring Boot?
+3	How is Spring Boot different from the traditional Spring framework?
+4	What is the role of @SpringBootApplication annotation?
+5	What is an embedded server in Spring Boot?
+6	What is the purpose of the application.properties or application.yml file in Spring Boot?
+7	What is spring-boot-starter?
+8	How do you run a Spring Boot application?
+9	What is a Spring Boot actuator?
+2. Medium Level Spring Boot Interview Questions
+#	Question
+10	What is auto-configuration in Spring Boot?
+11	What are Spring Boot profiles?
+12	How does Spring Boot handle logging?
+13	What are @RestController and @Controller in Spring Boot?
+14	What is Spring Boot DevTools?
+15	How can you configure a Spring Boot application to connect to a database?
+16	How do you configure custom properties in Spring Boot?
+17	What is the role of @EnableAutoConfiguration in Spring Boot?
+18	How do you create a custom starter in Spring Boot?
+19	What is Spring Boot’s embedded Tomcat server?
+20	How do you perform validation in Spring Boot applications?
+3. Hard Level Spring Boot Interview Questions
+#	Question
+21	How does Spring Boot handle security?
+22	How do you manage externalized configuration in Spring Boot?
+23	How can you integrate Spring Boot with Spring Data JPA?
+24	How can you manage Spring Boot application versions?
+25	What are Spring Boot Actuator endpoints?
+26	How do you implement custom error handling in Spring Boot?
+27	How do you deploy a Spring Boot application to production?
+28	How do you handle transactions in Spring Boot?
+29	What is Spring Boot’s testing support?
+30	What is the difference between @SpringBootTest and @WebMvcTest?
+31	How does Spring Boot support asynchronous processing?
+4. Advanced Level Spring Boot Interview Questions
+#	Question
+32	How do you configure Spring Boot for microservices architecture?
+33	How do you implement Circuit Breaker in Spring Boot?
+34	What is Spring Boot’s support for Docker?
+35	How do you implement distributed tracing in Spring Boot?
+36	What is Spring Boot’s support for monitoring?
+37	How does Spring Boot handle background tasks?
+38	How do you configure Spring Boot for handling large-scale applications?
+39	How do you implement multi-tenancy in Spring Boot?
+40	How do you handle state management in Spring Boot for stateless applications?
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+1.project details, last implemented feature and challenges faced while doing
+2. Java garbage collector
+3.string joiner class
+4.utility class and methods in it.
+5.java 8 feature
+6. Executor servise,future and completable future
+6. Program to find non repeated character
+7. Sql query to find second highest salary and count of male and female in each department
+8. Scenario based on spring boot.
+----------------------------------------------------------------------------------------------------------------------------------
+
+1. Can static variable, block and method can be inherited?
+2. Can constructor be inherited?
+3. Can constructor be overload or override?
+4. Static method can be overload or override?
+5. 
+
+
+

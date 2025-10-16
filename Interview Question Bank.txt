@@ -1,0 +1,74 @@
+Interview Question Bank
+
+--> Projects:- 
+- project details, last implemented feature and challenges faced while doing
+
+--> JVM Memory Management/Garbage Collection:- 
+- Java garbage collector 
+- Explain jvm  memory management
+- JVM architecture, Class loader
+
+--> String:- 
+
+- String joiner class
+- Utility class and methods in it.
+
+--> Exception:- 
+Exceptional propagation, throw, throws and try catch
+ 
+--> MultiThreading:-
+- Executor servise,future and completable future
+- What is the difference between execution in executor framework?
+- What is blocking queue?
+- How do we know thread pool is exhausted or has empty thread?
+
+--> Collections:-
+ 
+- When we used hash set &  tree set
+- Difference between array list & hash set
+- What is a weak hash map
+- How will you convert string in to array and make it use
+
+
+--> Java8
+- Explain java 8 feature
+- Explain function interface. real time example
+	Ex. Predicate<String> predicate = (String s)->s.length()>5;
+	    System.out.println(predicate.test("hello"));
+		
+--> Design Pattern:- 
+- What if we initialize Date class object in singleton class, will the date object be singleton too?
+- What design pattern is used with async data update between different clients?
+- Different design patterns.
+		
+--> Spring Boot:- 
+- Scenario based on spring boot
+- Difference between @Bean & @Componant annotation
+- Which annotation used in previous project
+- Spring-spring boot difference
+- hibernate features
+- soap and Rest API difference
+- http protocol, http cookies
+- How does Spring Boot handle logging?
+- How do you create a custom starter in Spring Boot?
+- What is Spring Boot’s testing support?
+- What is the difference between @SpringBootTest and @WebMvcTest?
+- How does Spring Boot support asynchronous processing?
+- Pagination Vs JPA Repository
+- Explain pagination concept and types of pagination with working example
+
+--> Spring Security	
+
+- Difference between authentication & authorization
+- Explain flow of spring security 
+
+--> Microservices
+- Design pattern in microservices 
+
+--> SQL
+- Sql query to find second highest salary and count of male and female in each department 
+- sequence in Oracle
+- Optimize query
+- different joins in SQL
+- do we use SP/functions in queries
+
