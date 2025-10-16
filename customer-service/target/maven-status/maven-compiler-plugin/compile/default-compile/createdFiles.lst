@@ -1,0 +1,10 @@
+com\capgemini\training\manjeet\CustomerServiceApplication.class
+com\capgemini\training\manjeet\util\ResponseBuilder.class
+com\capgemini\training\manjeet\controller\CustomerController.class
+com\capgemini\training\manjeet\mapper\CustomerMapper.class
+com\capgemini\training\manjeet\repository\CustomerRepository.class
+com\capgemini\training\manjeet\dto\ApiResponse.class
+com\capgemini\training\manjeet\dto\CustomerRequestDTO.class
+com\capgemini\training\manjeet\dto\CustomerResponseDTO.class
+com\capgemini\training\manjeet\service\CustomerService.class
+com\capgemini\training\manjeet\model\Customer.class
